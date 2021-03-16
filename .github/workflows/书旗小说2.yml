@@ -1,4 +1,4 @@
-name: 书旗2
+name: SQ2
 on:
   workflow_dispatch:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/jeverme/SQ2.git ~/SQ2
+          git clone https://github.com/Banme55/SQ2.git ~/SQ2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
@@ -23,7 +23,7 @@ jobs:
           npm install request
           curl ipinfo.io/json
 
-      - name: '【书旗小说2】'
+      - name: '【SQ2】'
         run: |
           cd ~/SQ2/Task   
           node sqxs.js
